@@ -28,8 +28,8 @@ function no_callback() {
 }
 
 function run() {
-    window.setTimeout(callback, 2 * 1000);
-    window.setTimeout(no_callback, 5000);
+    window.setTimeout(callback, 500);
+    window.setTimeout(no_callback, 200);
 }
 function setEventListeners() {
     button_element.addEventListener('click', run)
