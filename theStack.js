@@ -28,8 +28,11 @@ function no_callback() {
 }
 
 function run() {
-    window.setTimeout(callback, 500);
-    window.setTimeout(no_callback, 200);
+    window.setTimeout(callback, 1000);
+    window.setTimeout(no_callback, 1000);
+     message = "run() function invoked. Timer set to: 1000ms count = " + count.toString() + "<br />"
+    paragraph.innerHTML += message
+    count += 1
 }
 function setEventListeners() {
     button_element.addEventListener('click', run)
